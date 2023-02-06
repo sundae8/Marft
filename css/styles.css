@@ -22,7 +22,7 @@
 .header {
     width: 1440px;
     margin: 0 auto;
-    padding: 16px 55px 45px;
+    padding: 35px 55px 35px;
     display: flex;
     align-items: center;
     border-bottom: 2px solid #6E6E6E;
@@ -62,18 +62,113 @@
 
 /* main */
 
-
-
-
-
-.hero-btn {
-    background-color: #F6D88C;
-    border: none;
-    border-radius: 16px;
-    padding: 22px 36px;
+/* hero */
+.content {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
+.hero {
+    background-color: #F8F3EC;
+}
+.hero-title {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 82px;
+    line-height: 71px;
+    color: var(--primary-color);
 
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 500px;
+}
+.hero-text {
+    font-family: var(--main-font);
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: var(--text-size);
+
+    margin-top: 0;
+    margin-bottom: 40px;
+    width: 370px;
+}
+.hero-btn {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: var(--text-size);
+    text-transform: uppercase;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    border: none;
+    padding: 20px 36px;
+    border-radius: 16px;
+}
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: tomato;
+}
+.hero-img {
+    width: 268px;
+    height: 653px;
+}
+.hero-img:first-child {
+    margin-right: 14px;
+}
+.hero-container {
+    font-size: 0;
+}
+.hero-left-side {
+    margin-right: 96px;
+}
+.hero-right-side {
+    padding: 63px 0 54px;
+}
+
+/* clients */
+.clients-left-side {
+    margin-right: 105px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+}
+.clients-left-side::before {
+    width: 5px;
+    height: 146px;
+    background-color: var(--accent-color);
+    content: "";
+    display: inline-block;
+    margin-right: 30px;
+}
+.clients-right-side {
+    padding-top: 140px;
+    padding-bottom: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 695px;
+}
+.clients-title {
+    font-family: var(--main-font);
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 600;
+    width: 314px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.clients-text {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: var(--text-size);
+    color: var(--secondary-color);
+    width: 295px;
+}
+.clients-img {
+    width: 224px;
+    height: 91px;
+    margin-right: 11px;
+    margin-bottom: 11px;
+}
+.clients-img:nth-child(3n+3) {
+    margin-right: 0;
 }
