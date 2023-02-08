@@ -1,43 +1,43 @@
 :root {
     --primary-color: #181817;
-    --secondary-color: #6F6F6F;
+    --secondary-color: #6E6E6E;
     --accent-color: #F6D88C;
-    --common-white: #F8F3EC;
+    --primary-background: #F8F3EC;
+    --secondary-background: #E5E5E5;
     --main-font: "Darker Grotesque", sans-serif;
-    --title-size: 65px;
-    --text-size: 22px;
 }
-* {
+/* *{
     box-sizing: border-box;
-}
-
-/* header */
-.wrapper {
-    background-color: #F8F3EC;
-}
-.list {
+}  */
+ul {
     list-style: none;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
+body {
+    color: var(--primary-color);
+    background-color: var(--primary-background);
+
+    font-family: var(--main-font);
+    font-weight: 600;
+}
+
+/* Header */
 .header {
-    width: 1440px;
-    margin: 0 auto;
-    padding: 35px 55px 35px;
     display: flex;
+    width: 1440px;
     align-items: center;
-    border-bottom: 2px solid #6E6E6E;
+    margin: 0 auto;
+    padding: 30px 80px 26px 80px;
+    border-bottom: 2px solid rgba(110, 110, 110, 0.3);
 }
 .nav {
-    font-family: var(--main-font);
-    margin-right: 262px;
+    margin-right: 320px;
 }
 .nav-list {
     display: flex;
-}
-.nav-link {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-size: var(--text-size);
 }
 .nav-item {
     margin-right: 40px;
@@ -45,19 +45,41 @@
 .nav-item:last-child {
     margin-right: 0;
 }
+.nav-link {
+    color: var(--secondary-color);
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.36;
+}
+.nav-link:hover,
+.nav-link:focus {
+    text-decoration-line: underline;
+}
 .logo {
-    margin-right: 450px;
-    text-decoration: none;
     color: var(--primary-color);
-    font-size: 40px;
-    font-family: var(--main-font);
+
     font-weight: 700;
+    font-size: 40px;
+    line-height: 1.35;
+
+    margin-right: 502px;
 }
 .logo-dot {
     color: var(--accent-color);
 }
+.logo:hover,
+.logo:focus {
+    text-shadow: 2px 0 2px var(--accent-color);
+}
+.social {
+    width: 168px;
+}
 .social-link {
-    text-decoration: none;
+    margin-right: 18px;
+}
+.social-link:last-child {
+    margin-right: 0;
 }
 
 /* main */
